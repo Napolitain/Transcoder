@@ -13,15 +13,55 @@
 		FB576522277757B700FE6C19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB576510277757B600FE6C19 /* ContentView.swift */; };
 		FB576523277757B700FE6C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB576511277757B700FE6C19 /* Assets.xcassets */; };
 		FB576524277757B700FE6C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB576511277757B700FE6C19 /* Assets.xcassets */; };
+		FBD00CB8277E130B00956F21 /* ffmpeg.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD00CB7277E130B00956F21 /* ffmpeg.m */; };
+		FBD00CB9277E130B00956F21 /* ffmpeg.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD00CB7277E130B00956F21 /* ffmpeg.m */; };
+		FBD00CBA2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885AB2BD7B8170D039EE9A3B /* Pods_Transcoder__macOS_.framework */; };
+		FBD00CBB2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885AB2BD7B8170D039EE9A3B /* Pods_Transcoder__macOS_.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FBD00CBD2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD2892BDD51EAAF227DF8E6 /* Pods_Transcoder__iOS_.framework */; };
+		FBD00CBE2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD2892BDD51EAAF227DF8E6 /* Pods_Transcoder__iOS_.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FBD00CBC2780A3C000956F21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FBD00CBB2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD00CBF2780A40700956F21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FBD00CBE2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		06F34F59E52B96103C90F2BC /* Pods-Transcoder (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcoder (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Transcoder (iOS)/Pods-Transcoder (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		1AAB2D4C88E68B77D9E54C3E /* Pods-Transcoder (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcoder (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Transcoder (macOS)/Pods-Transcoder (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		885AB2BD7B8170D039EE9A3B /* Pods_Transcoder__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transcoder__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCC7D53CF981D2EC28591EA /* Pods-Transcoder (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcoder (iOS).release.xcconfig"; path = "Target Support Files/Pods-Transcoder (iOS)/Pods-Transcoder (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		B662A4A5D2E2EA0FC963F5A9 /* Pods-Transcoder (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcoder (macOS).release.xcconfig"; path = "Target Support Files/Pods-Transcoder (macOS)/Pods-Transcoder (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		EBD2892BDD51EAAF227DF8E6 /* Pods_Transcoder__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transcoder__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB57650F277757B600FE6C19 /* TranscoderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscoderApp.swift; sourceTree = "<group>"; };
 		FB576510277757B600FE6C19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB576511277757B700FE6C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB576516277757B700FE6C19 /* Transcoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB57651C277757B700FE6C19 /* Transcoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB57651E277757B700FE6C19 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FBD00CB5277E130B00956F21 /* Transcoder (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transcoder (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBD00CB6277E130B00956F21 /* Transcoder (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transcoder (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBD00CB7277E130B00956F21 /* ffmpeg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ffmpeg.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD00CBD2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,27 +77,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD00CBA2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87CBE5A10E0ACBB7A7B857A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD2892BDD51EAAF227DF8E6 /* Pods_Transcoder__iOS_.framework */,
+				885AB2BD7B8170D039EE9A3B /* Pods_Transcoder__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89A476A0E8C6551992AC6A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06F34F59E52B96103C90F2BC /* Pods-Transcoder (iOS).debug.xcconfig */,
+				9FCC7D53CF981D2EC28591EA /* Pods-Transcoder (iOS).release.xcconfig */,
+				1AAB2D4C88E68B77D9E54C3E /* Pods-Transcoder (macOS).debug.xcconfig */,
+				B662A4A5D2E2EA0FC963F5A9 /* Pods-Transcoder (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FB576509277757B600FE6C19 = {
 			isa = PBXGroup;
 			children = (
 				FB57650E277757B600FE6C19 /* Shared */,
 				FB57651D277757B700FE6C19 /* macOS */,
 				FB576517277757B700FE6C19 /* Products */,
+				89A476A0E8C6551992AC6A9E /* Pods */,
+				87CBE5A10E0ACBB7A7B857A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FB57650E277757B600FE6C19 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FB57652D2777599D00FE6C19 /* Model */,
 				FB57650F277757B600FE6C19 /* TranscoderApp.swift */,
 				FB576510277757B600FE6C19 /* ContentView.swift */,
 				FB576511277757B700FE6C19 /* Assets.xcassets */,
+				FBD00CB7277E130B00956F21 /* ffmpeg.m */,
+				FBD00CB5277E130B00956F21 /* Transcoder (iOS)-Bridging-Header.h */,
+				FBD00CB6277E130B00956F21 /* Transcoder (macOS)-Bridging-Header.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -78,6 +146,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		FB57652D2777599D00FE6C19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB576527277757B700FE6C19 /* Build configuration list for PBXNativeTarget "Transcoder (iOS)" */;
 			buildPhases = (
+				148A807F8B9D2BE7A0928CDA /* [CP] Check Pods Manifest.lock */,
 				FB576512277757B700FE6C19 /* Sources */,
 				FB576513277757B700FE6C19 /* Frameworks */,
 				FB576514277757B700FE6C19 /* Resources */,
+				FBD00CBF2780A40700956F21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB57652A277757B700FE6C19 /* Build configuration list for PBXNativeTarget "Transcoder (macOS)" */;
 			buildPhases = (
+				BCBC48C793D3C6E605C18B14 /* [CP] Check Pods Manifest.lock */,
 				FB576518277757B700FE6C19 /* Sources */,
 				FB576519277757B700FE6C19 /* Frameworks */,
 				FB57651A277757B700FE6C19 /* Resources */,
+				FBD00CBC2780A3C000956F21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,9 +206,11 @@
 				TargetAttributes = {
 					FB576515277757B700FE6C19 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					FB57651B277757B700FE6C19 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -171,6 +252,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		148A807F8B9D2BE7A0928CDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transcoder (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBC48C793D3C6E605C18B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transcoder (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB576512277757B700FE6C19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -178,6 +306,7 @@
 			files = (
 				FB576521277757B700FE6C19 /* ContentView.swift in Sources */,
 				FB57651F277757B700FE6C19 /* TranscoderApp.swift in Sources */,
+				FBD00CB8277E130B00956F21 /* ffmpeg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +316,7 @@
 			files = (
 				FB576522277757B700FE6C19 /* ContentView.swift in Sources */,
 				FB576520277757B700FE6C19 /* TranscoderApp.swift in Sources */,
+				FBD00CB9277E130B00956F21 /* ffmpeg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +436,11 @@
 		};
 		FB576528277757B700FE6C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F34F59E52B96103C90F2BC /* Pods-Transcoder (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GHJHRRHH46;
@@ -329,6 +461,8 @@
 				PRODUCT_NAME = Transcoder;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Transcoder (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,9 +470,11 @@
 		};
 		FB576529277757B700FE6C19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCC7D53CF981D2EC28591EA /* Pods-Transcoder (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GHJHRRHH46;
@@ -359,6 +495,7 @@
 				PRODUCT_NAME = Transcoder;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Transcoder (iOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -367,9 +504,11 @@
 		};
 		FB57652B277757B700FE6C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAB2D4C88E68B77D9E54C3E /* Pods-Transcoder (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -378,6 +517,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,15 +529,19 @@
 				PRODUCT_NAME = Transcoder;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Transcoder (macOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		FB57652C277757B700FE6C19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B662A4A5D2E2EA0FC963F5A9 /* Pods-Transcoder (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -406,6 +550,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +562,7 @@
 				PRODUCT_NAME = Transcoder;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Transcoder (macOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

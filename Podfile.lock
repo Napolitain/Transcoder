@@ -1,0 +1,20 @@
+PODS:
+  - ffmpeg-kit-ios-full (4.5)
+  - ffmpeg-kit-macos-full (4.5)
+
+DEPENDENCIES:
+  - ffmpeg-kit-ios-full (~> 4.5)
+  - ffmpeg-kit-macos-full (~> 4.5)
+
+SPEC REPOS:
+  trunk:
+    - ffmpeg-kit-ios-full
+    - ffmpeg-kit-macos-full
+
+SPEC CHECKSUMS:
+  ffmpeg-kit-ios-full: c4cb480c1ba316d7f578191e39b079ef5691af00
+  ffmpeg-kit-macos-full: eeda86a131a618d6291722a0355435d5384868fa
+
+PODFILE CHECKSUM: 376fbfaaaf064cdef32c84555d212a45be3b67d6
+
+COCOAPODS: 1.11.2
