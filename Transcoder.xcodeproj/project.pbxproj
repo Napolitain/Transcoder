@@ -13,38 +13,11 @@
 		FB576522277757B700FE6C19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB576510277757B600FE6C19 /* ContentView.swift */; };
 		FB576523277757B700FE6C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB576511277757B700FE6C19 /* Assets.xcassets */; };
 		FB576524277757B700FE6C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB576511277757B700FE6C19 /* Assets.xcassets */; };
-		FBD00CB8277E130B00956F21 /* ffmpeg.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD00CB7277E130B00956F21 /* ffmpeg.m */; };
-		FBD00CB9277E130B00956F21 /* ffmpeg.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD00CB7277E130B00956F21 /* ffmpeg.m */; };
+		FB839E8C2781F3A4003EE952 /* videotest.mov in Resources */ = {isa = PBXBuildFile; fileRef = FB839E8B2781F3A4003EE952 /* videotest.mov */; };
+		FB839E8D2781F3A4003EE952 /* videotest.mov in Resources */ = {isa = PBXBuildFile; fileRef = FB839E8B2781F3A4003EE952 /* videotest.mov */; };
 		FBD00CBA2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885AB2BD7B8170D039EE9A3B /* Pods_Transcoder__macOS_.framework */; };
-		FBD00CBB2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885AB2BD7B8170D039EE9A3B /* Pods_Transcoder__macOS_.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FBD00CBD2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD2892BDD51EAAF227DF8E6 /* Pods_Transcoder__iOS_.framework */; };
-		FBD00CBE2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD2892BDD51EAAF227DF8E6 /* Pods_Transcoder__iOS_.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FBD00CBC2780A3C000956F21 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FBD00CBB2780A3C000956F21 /* Pods_Transcoder__macOS_.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBD00CBF2780A40700956F21 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FBD00CBE2780A40700956F21 /* Pods_Transcoder__iOS_.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06F34F59E52B96103C90F2BC /* Pods-Transcoder (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transcoder (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Transcoder (iOS)/Pods-Transcoder (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,9 +32,7 @@
 		FB576516277757B700FE6C19 /* Transcoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB57651C277757B700FE6C19 /* Transcoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB57651E277757B700FE6C19 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		FBD00CB5277E130B00956F21 /* Transcoder (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transcoder (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
-		FBD00CB6277E130B00956F21 /* Transcoder (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transcoder (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
-		FBD00CB7277E130B00956F21 /* ffmpeg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ffmpeg.m; sourceTree = "<group>"; };
+		FB839E8B2781F3A4003EE952 /* videotest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = videotest.mov; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +89,13 @@
 		FB57650E277757B600FE6C19 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FB839E8A2781EBD2003EE952 /* Controller */,
+				FB839E892781EBC8003EE952 /* ModelView */,
 				FB57652D2777599D00FE6C19 /* Model */,
 				FB57650F277757B600FE6C19 /* TranscoderApp.swift */,
 				FB576510277757B600FE6C19 /* ContentView.swift */,
+				FB839E8B2781F3A4003EE952 /* videotest.mov */,
 				FB576511277757B700FE6C19 /* Assets.xcassets */,
-				FBD00CB7277E130B00956F21 /* ffmpeg.m */,
-				FBD00CB5277E130B00956F21 /* Transcoder (iOS)-Bridging-Header.h */,
-				FBD00CB6277E130B00956F21 /* Transcoder (macOS)-Bridging-Header.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -153,6 +124,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FB839E892781EBC8003EE952 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		FB839E8A2781EBD2003EE952 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,7 +149,6 @@
 				FB576512277757B700FE6C19 /* Sources */,
 				FB576513277757B700FE6C19 /* Frameworks */,
 				FB576514277757B700FE6C19 /* Resources */,
-				FBD00CBF2780A40700956F21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,7 +167,6 @@
 				FB576518277757B700FE6C19 /* Sources */,
 				FB576519277757B700FE6C19 /* Frameworks */,
 				FB57651A277757B700FE6C19 /* Resources */,
-				FBD00CBC2780A3C000956F21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB839E8C2781F3A4003EE952 /* videotest.mov in Resources */,
 				FB576523277757B700FE6C19 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB839E8D2781F3A4003EE952 /* videotest.mov in Resources */,
 				FB576524277757B700FE6C19 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +291,6 @@
 			files = (
 				FB576521277757B700FE6C19 /* ContentView.swift in Sources */,
 				FB57651F277757B700FE6C19 /* TranscoderApp.swift in Sources */,
-				FBD00CB8277E130B00956F21 /* ffmpeg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +300,6 @@
 			files = (
 				FB576522277757B700FE6C19 /* ContentView.swift in Sources */,
 				FB576520277757B700FE6C19 /* TranscoderApp.swift in Sources */,
-				FBD00CB9277E130B00956F21 /* ffmpeg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
